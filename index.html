@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+<section class="event">
+<div class="box-container">
+    <div class="box">
+        <h2>EVENT</h2>
+        <p>No of seats available : 25</p>
+        </div>
+        <div class="container">
+            <div class="event-image">
+                <img src="/event.jpg" class="event-img">
+            </div>
+            <div class="form1">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter your name" id="name" required/><br>
+                    <label for="mail">Email:</label>
+                    <input type="email" placeholder="Enter your email" id="mail" required/><br>
+                    <label for="phone_number">Mobile:</label>
+                    <input type="text" required pattern="[0-9]{10}" id="phone_number" placeholder="Enter the mobilenumber"/><br>
+                    <label for="seats">No of seats:</label>
+                    <input type="number" required id="seats" min="1" max="10"/><br>
+                    <label for="attendee">Name of Attendee:</label>
+                    <input type="text" required placeholder="Enter name of attendee" id="attendee"/><br>
+                   <div class="finish"> <input class="ok" type="submit" value="Submit"> <button id="exit" class="notok " onclick="exitt();" type="button">Cancel</button>  </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="/script.js"></script>
+</body>
+</html>
